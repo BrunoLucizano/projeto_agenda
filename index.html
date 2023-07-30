@@ -17,7 +17,7 @@
         </header>
         <form id="form-contato">
             <input type="text" id="nome-contato" required placeholder="Nome do contato " />
-            <input type="number" id="telefone" required placeholder="DDD+Número" minlength="10" maxlength="11"/>
+            <input type="text" id="telefone" required placeholder="DDD+Número" pattern="[0-9]{10,11}" />
             <button type="submit">Adicionar +</button>
         </form>
         <table cellspacing="0">
@@ -28,6 +28,9 @@
                     </th>
                     <th>
                         Numero do telefone
+                    </th>
+                    <th>
+                        Tipo
                     </th>
                     </tr>
             </thead>
